@@ -1,0 +1,166 @@
+{
+  "settings": {
+    "name": "Insert an image into the accordion tab",
+    "currentPage": "index.html",
+    "theme": {
+      "name": "mobirise5",
+      "title": "Mobirise 5",
+      "styling": {
+        "primaryColor": "#6592e6",
+        "secondaryColor": "#ff6666",
+        "successColor": "#40b0bf",
+        "infoColor": "#47b5ed",
+        "warningColor": "#FFE161",
+        "dangerColor": "#ff9966",
+        "mainFont": "Jost",
+        "display1Font": "Jost",
+        "display1Size": 4.6,
+        "display2Font": "Jost",
+        "display2Size": 3,
+        "display5Font": "Jost",
+        "display5Size": 2,
+        "display7Font": "Jost",
+        "display7Size": 1.2,
+        "display4Font": "Jost",
+        "display4Size": 1.1,
+        "isRoundedButtons": false,
+        "isGhostButtonBorder": false,
+        "underlinedLinks": false,
+        "isAnimatedOnScroll": false,
+        "isScrollToTopButton": false
+      }
+    },
+    "path": "@PROJECT_PATH@",
+    "versionFirst": "5.4.3",
+    "siteFonts": [
+      {
+        "css": "'Jost', sans-serif",
+        "name": "Jost",
+        "url": "https://fonts.googleapis.com/css?family=Jost:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i"
+      }
+    ],
+    "chatbutton": {},
+    "uniqCompNum": 2,
+    "versionPublish": "5.4.3",
+    "imageResize": true,
+    "favicon": false,
+    "mbrsiteDomain": "jipbnh8p9f",
+    "cssOptimize": false,
+    "lazyLoad": false,
+    "robotsSwitcher": false,
+    "sitemapSwitcher": false,
+    "sitemapSwitcherAuto": false,
+    "siteUrl": false,
+    "cookiesAlert": false,
+    "gdpr": false,
+    "pwa-switcher": false,
+    "witsec-mailform": false,
+    "witsec-jquery": false,
+    "screenshot": "screenshot.png"
+  },
+  "pages": {
+    "index.html": {
+      "settings": {
+        "main": true,
+        "title": "Insert an image into the accordion tab",
+        "meta_descr": "Insert an image into the accordion tab",
+        "header_custom": "",
+        "footer_custom": "",
+        "html_before": ""
+      },
+      "components": [
+        {
+          "_name": "extAccordion1",
+          "_sourceTheme": "mobirise4-blocks-theme",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"extAccordion\" group=\"Additional Blocks\" data-bg-video=\"{{bg.type == 'video'&&bg.value.url}}\" mbr-class=\"{'mbr-parallax-background':bg.parallax}\" plugins=\"mbr-switch-arrow\">\n\n  <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n    <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"9\" step=\"1\" value=\"5\">\n    <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"9\" step=\"1\" value=\"5\">\n\n    <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n    <input type=\"color\" title=\"Tabs Color\" name=\"tabsColor\" value=\"#ffffff\" selected>\n    <input type=\"color\" title=\"Active Border Color\" name=\"border\" value=\"#b2b4d2\" selected>\n\n    <select title=\"Toggles Count\" name=\"bootstrapAccordion\">\n      <option value=\"1\">1</option>\n      <option value=\"2\">2</option>\n      <option value=\"3\">3</option>\n      <option value=\"4\">4</option>\n      <option value=\"5\">5</option>\n      <option value=\"6\" selected>6</option>\n    </select>\n\n    <fieldset type=\"background\" name=\"bg\" parallax>\n      <input type=\"image\" title=\"Background Image\" value=\"@ADDONS_PATH@/mobirise4-blocks-theme/components/_images/background3.jpg\">\n      <input type=\"color\" title=\"Background Color\" value=\"#eaeff9\" selected>\n      <input type=\"video\" title=\"Background Video\" value=\"http://www.youtube.com/watch?v=uNCr7NdOJgw\">\n    </fieldset>\n    <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" checked condition=\"bg.type !== 'color'\">\n    <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay&&bg.type !== 'color'\">\n    <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.7\" condition=\"overlay&&bg.type !== 'color'\">\n    <!-- End block parameters -->\n  </mbr-parameters>\n\n  <div class=\"mbr-overlay\" mbr-if=\"overlay&&bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n  </div>\n  <div class=\"container\">\n    <div class=\"media-container-row\">\n      <div class=\"col-12 col-md-12\">\n        <div class=\"section-head text-center space30\">\n          <h2 class=\"mbr-section-title pb-3 mbr-fonts-style\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\">\n            Accordions\n          </h2>\n        </div>\n        <div class=\"clearfix\"></div>\n        <div id=\"bootstrap-toggle\" class=\"toggle-panel accordionStyles tab-content\">\n          <div class=\"card\">\n            <div class=\"card-header\" role=\"tab\" id=\"headingOne\">\n              <div class=\"media-container-row\">\n                <div class=\"mbr-figure\">\n                  <img src=\"@PROJECT_PATH@/assets/images/mbr.jpg\" alt=\"Mobirise\">\n                </div>\n                <a role=\"button\" class=\"collapsed panel-title\" data-toggle=\"collapse\" data-bs-toggle=\"collapse\" data-core href=\"#collapse1\" aria-expanded=\"false\" aria-controls=\"collapse1\">\n                  <h4 class=\"mbr-fonts-style\" mbr-theme-style=\"display-4\">Fashion Trends</h4>\n                </a>\n              </div>\n            </div>\n            <div id=\"collapse1\" class=\"panel-collapse noScroll collapse\" role=\"tabpanel\" aria-labelledby=\"headingOne\">\n              <div class=\"panel-body\">\n                <p class=\"mbr-fonts-style mbr-text panel-text\" mbr-theme-style=\"display-4\" data-app-selector=\".panel-text\">\n                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris et elit vitae lectus convallis scelerisque. Cras vestibulum blandit lorem, at fringilla nisl sollicitudin ac. Nunc venenatis nec neque sed semper. Mauris viverra, sapien sed fringilla egestas, sem felis condimentum augue, vitae sodales sem metus in ex. Aenean massa velit, sollicitudin quis elementum sit amet, vehicula sed nunc.</p>\n              </div>\n            </div>\n          </div>\n          <div class=\"card\" mbr-if=\"bootstrapAccordion > 1\">\n            <div class=\"card-header\" role=\"tab\" id=\"headingTwo\">\n              <div class=\"media-container-row\">\n                <div class=\"mbr-figure\">\n                  <img src=\"@PROJECT_PATH@/assets/images/mbr-207x137.jpg\" alt=\"Mobirise\">\n                </div>\n                <a role=\"button\" class=\"collapsed panel-title\" data-toggle=\"collapse\" data-bs-toggle=\"collapse\" data-core href=\"#collapse2\" aria-expanded=\"false\" aria-controls=\"collapse2\">\n                  <h4 class=\"mbr-fonts-style\" mbr-theme-style=\"display-4\">Casual Style</h4>\n                </a>\n              </div>\n            </div>\n            <div id=\"collapse2\" class=\"panel-collapse noScroll collapse\" role=\"tabpanel\" aria-labelledby=\"headingTwo\">\n              <div class=\"panel-body\">\n                <p class=\"mbr-fonts-style mbr-text panel-text\" mbr-theme-style=\"display-4\" data-app-selector=\".panel-text\">\n                  Donec facilisis felis arcu, vitae vestibulum massa lobortis eget. Ut pellentesque purus feugiat, tristique magna ac, luctus est. Vivamus sit amet magna venenatis, bibendum erat eu, tincidunt justo. Aenean viverra sollicitudin neque, sed bibendum nulla mollis id. Proin sit amet aliquet dui.&nbsp;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris et elit vitae lectus convallis scelerisque.</p>\n              </div>\n            </div>\n          </div>\n          <div class=\"card\" mbr-if=\"bootstrapAccordion > 2\">\n            <div class=\"media-container-row\">\n              <div class=\"mbr-figure\">\n                <img src=\"@PROJECT_PATH@/assets/images/mbr-207x138.jpg\" alt=\"Mobirise\">\n              </div>\n              <div class=\"card-header\" role=\"tab\" id=\"headingThree\">\n                <a role=\"button\" class=\"collapsed panel-title\" data-toggle=\"collapse\" data-bs-toggle=\"collapse\" data-core href=\"#collapse3\" aria-expanded=\"false\" aria-controls=\"collapse3\">\n                  <h4 class=\"mbr-fonts-style\" mbr-theme-style=\"display-4\">Accessories Design</h4>\n                </a>\n              </div>\n            </div>\n            <div id=\"collapse3\" class=\"panel-collapse noScroll collapse\" role=\"tabpanel\" aria-labelledby=\"headingThree\">\n              <div class=\"panel-body\">\n                <p class=\"mbr-fonts-style mbr-text panel-text\" mbr-theme-style=\"display-4\" data-app-selector=\".panel-text\">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris et elit vitae lectus convallis scelerisque. Cras vestibulum blandit lorem, at fringilla nisl sollicitudin ac. Nunc venenatis nec neque sed semper. Mauris viverra, sapien sed fringilla egestas, sem felis condimentum augue, vitae sodales sem metus in ex. Aenean massa velit, sollicitudin quis elementum sit amet, vehicula sed nunc.</p>\n              </div>\n            </div>\n          </div>\n          <div class=\"card\" mbr-if=\"bootstrapAccordion > 3\">\n            <div class=\"media-container-row\">\n              <div class=\"mbr-figure\">\n                <img src=\"@PROJECT_PATH@/assets/images/mbr-1-207x138.jpg\" alt=\"Mobirise\">\n              </div>\n              <div class=\"card-header\" role=\"tab\" id=\"headingThree\">\n                <a role=\"button\" class=\"collapsed panel-title\" data-toggle=\"collapse\" data-bs-toggle=\"collapse\" data-core href=\"#collapse4\" aria-expanded=\"false\" aria-controls=\"collapse4\">\n                  <h4 class=\"mbr-fonts-style\" mbr-theme-style=\"display-4\">Important Details</h4>\n                </a>\n              </div>\n            </div>\n            <div id=\"collapse4\" class=\"panel-collapse noScroll collapse\" role=\"tabpanel\" aria-labelledby=\"headingThree\">\n              <div class=\"panel-body\">\n                <p class=\"mbr-fonts-style mbr-text panel-text\" mbr-theme-style=\"display-4\" data-app-selector=\".panel-text\">\n                  Donec facilisis felis arcu, vitae vestibulum massa lobortis eget. Ut pellentesque purus feugiat, tristique magna ac, luctus est. Vivamus sit amet magna venenatis, bibendum erat eu, tincidunt justo. Aenean viverra sollicitudin neque, sed bibendum nulla mollis id. Proin sit amet aliquet dui.&nbsp;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris et elit vitae lectus convallis scelerisque.</p>\n              </div>\n            </div>\n          </div>\n          <div class=\"card\" mbr-if=\"bootstrapAccordion > 4\">\n            <div class=\"media-container-row\">\n              <div class=\"mbr-figure\">\n                <img src=\"@PROJECT_PATH@/assets/images/mbr-2-207x138.jpg\" alt=\"Mobirise\">\n              </div>\n              <div class=\"card-header\" role=\"tab\" id=\"headingThree\">\n                <a role=\"button\" class=\"collapsed panel-title\" data-toggle=\"collapse\" data-bs-toggle=\"collapse\" data-core href=\"#collapse5\" aria-expanded=\"false\" aria-controls=\"collapse5\">\n                  <h4 class=\"mbr-fonts-style\" mbr-theme-style=\"display-4\">Light Colors</h4>\n                </a>\n              </div>\n            </div>\n            <div id=\"collapse5\" class=\"panel-collapse noScroll collapse\" role=\"tabpanel\" aria-labelledby=\"headingThree\">\n              <div class=\"panel-body\">\n                <p class=\"mbr-fonts-style mbr-text panel-text\" mbr-theme-style=\"display-7\" data-app-selector=\".panel-text\">\n                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris et elit vitae lectus convallis scelerisque. Cras vestibulum blandit lorem, at fringilla nisl sollicitudin ac. Nunc venenatis nec neque sed semper. Mauris viverra, sapien sed fringilla egestas, sem felis condimentum augue, vitae sodales sem metus in ex. Aenean massa velit, sollicitudin quis elementum sit amet, vehicula sed nunc.</p>\n              </div>\n            </div>\n          </div>\n          <div class=\"card\" mbr-if=\"bootstrapAccordion > 5\">\n            <div class=\"media-container-row\">\n              <div class=\"mbr-figure\">\n                <img src=\"@PROJECT_PATH@/assets/images/mbr-3-207x138.jpg\" alt=\"Mobirise\">\n              </div>\n              <div class=\"card-header\" role=\"tab\" id=\"headingThree\">\n                <a role=\"button\" class=\"collapsed panel-title\" data-toggle=\"collapse\" data-bs-toggle=\"collapse\" data-core href=\"#collapse6\" aria-expanded=\"false\" aria-controls=\"collapse6\">\n                  <h4 class=\"mbr-fonts-style\" mbr-theme-style=\"display-4\">Brand Identity\n                  </h4>\n                </a>\n              </div>\n            </div>\n            <div id=\"collapse6\" class=\"panel-collapse noScroll collapse\" role=\"tabpanel\" aria-labelledby=\"headingThree\">\n              <div class=\"panel-body\">\n                <p class=\"mbr-fonts-style mbr-text panel-text\" mbr-theme-style=\"display-7\" data-app-selector=\".panel-text\">\n                  Donec facilisis felis arcu, vitae vestibulum massa lobortis eget. Ut pellentesque purus feugiat, tristique magna ac, luctus est. Vivamus sit amet magna venenatis, bibendum erat eu, tincidunt justo. Aenean viverra sollicitudin neque, sed bibendum nulla mollis id. Proin sit amet aliquet dui.</p>\n              </div>\n            </div>\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n</section>",
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "position": "relative",
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            ".media-container-row": {
+              "justify-content": "flex-start"
+            },
+            ".mbr-figure img, .card-img img": {
+              "height": "69px",
+              "width": "auto"
+            },
+            ".card .card-header a.panel-title": {
+              "margin-bottom": "0",
+              "margin-top": "-1px",
+              "font-style": "normal",
+              "display": "block",
+              "text-decoration": "none !important",
+              "line-height": "normal",
+              "width": "100%"
+            },
+            "p": {
+              "color": "#767676",
+              "padding": "0",
+              "letter-spacing": "0px"
+            },
+            ".panel-title": {
+              "border-bottom": "2px solid @border"
+            },
+            ".collapsed": {
+              "border": "none"
+            },
+            ".panel-body": {
+              "padding-top": "0.5rem"
+            },
+            ".card": {
+              "border-radius": "0px",
+              "margin-bottom": "-1px",
+              ".card-header": {
+                "border-radius": "0px",
+                "margin": "0.5rem 0",
+                "border": "0px",
+                "background": "@tabsColor",
+                "padding": "0",
+                "width": "100%",
+                "a.panel-title": {
+                  "margin-bottom": "0",
+                  "margin-top": "-1px",
+                  "font-style": "normal",
+                  "display": "block",
+                  "text-decoration": "none !important",
+                  "line-height": "normal",
+                  "&:focus": {
+                    "text-decoration": "none !important"
+                  },
+                  "h4": {
+                    "padding": "1.3rem 2rem",
+                    "margin-bottom": "0",
+                    ".sign": {
+                      "padding-right": "1rem"
+                    }
+                  }
+                }
+              }
+            },
+            ".panel-text": {
+              "color": "#767676"
+            },
+            "H4": {
+              "color": "#767676",
+              "text-transform": "uppercase"
+            }
+          },
+          "_cid": "sKsyyabKi4",
+          "_anchor": "extAccordion1-0",
+          "_PHPplaceholders": [],
+          "_JSplaceholders": [],
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        }
+      ]
+    }
+  }
+}
