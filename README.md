@@ -1,2 +1,2 @@
-# insert-an-image-into-the-accordion-tab
+# Insert an image into the accordion tab
 GitHub Pages
